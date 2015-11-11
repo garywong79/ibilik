@@ -28,6 +28,8 @@ group :development, :test do
 	# Adding shotgun for local web hosting
 	gem 'shotgun'
 end
+#add byebug
+gem 'byebug'
 
 group :production do
 	# Heroku
