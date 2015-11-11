@@ -17,7 +17,7 @@ post "/properties" do
 end
 
 get "/properties/:id" do
-
+	@user = User.all
 	@property = Property.find_by(id: params[:id])
 	@comments = @property.comments
 	@bookings = @property.bookings
