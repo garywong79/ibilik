@@ -29,10 +29,12 @@
 
 <h5>Room booked by : <%= current_user.name %> </h5>
 
+<%if @booking %>
 <br><%=@booking.property.property_description %> : <%=@booking.property.rental %>
 <br><%=@booking.booking_date %>
 <br><%=@booking.booking_detail %>
 <hr>
+<%end%>
 
 
 
