@@ -1,7 +1,7 @@
 get '/' do
-	@property = Property.all
+	@properties = Property.all
 	@signup_succ = params[:signup_succ]
-	@comment = Comment.all
-	@booking = Booking.all
+	@comments = Comment.all
+	@bookings = Booking.all
   erb :"static/index"
 end

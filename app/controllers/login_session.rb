@@ -1,6 +1,6 @@
 get "/login" do
 
-erb :"user/login"
+erb :"users/login"
 
 end
 
@@ -11,12 +11,9 @@ post "/login" do
 		redirect to "/"
 	else
 		@login_error = "Invalid Login"
-		erb :"user/login"
+		erb :"users/login"
 	end
 
 end
 
-get "/users/:user_id" do
 
-erb :"user/profile"
-end
